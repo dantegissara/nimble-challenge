@@ -26,6 +26,7 @@ function JobItem({ job, candidate }) {
           },
           body: JSON.stringify({
             uuid: candidate.uuid,
+            applicationId: candidate.applicationId,
             jobId: job.id,
             candidateId: candidate.candidateId,
             repoUrl: repoUrl
@@ -81,7 +82,7 @@ function JobItem({ job, candidate }) {
 
       {success && (
         <p style={{ color: "green" }}>
-          Postulación enviada correctamente ✅
+          Postulación enviada correctamente 
         </p>
       )}
 
